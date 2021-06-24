@@ -1,0 +1,90 @@
+\documentclass{article}
+
+\usepackage{textcomp}
+\usepackage{titling}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+\titleformat
+{\section}        % command
+{\flushleft\Large\bfseries}      % formating
+{}                % label
+{0em} %spacing between number and title
+{} %content between number and title
+[\titlerule]
+
+\titleformat
+{\subsection}
+{\flushleft\large\bfseries}
+{$\bullet$}
+{.25em}
+{}
+
+\titleformat
+{\subsubsection} %[runin] %no indent
+{\flushleft}
+{}
+{0em}
+{}[---]
+
+\renewcommand{\maketitle}
+{
+\begin{center}
+\huge \bfseries \theauthor\\
+\vspace{.25em}
+\mdseries \normalsize ajn6@pdx.edu --- Software Engineer / Data Scientist
+\end{center}
+}
+
+\title{R\'esum\'e}
+\author{Austen Nelson}
+
+\begin{document}
+\maketitle
+\section{Work Experience}
+\subsection{Self Employed $\;\vert\;2014-2017\;\vert\;$ Math and Science Tutor}
+Operated a small personal business where I mostly tutored calculus to
+engineering students
+\subsection{Portland State University $\;\vert\;2019-\ldots\;\vert\;$ Technical Course Support Specialist}
+Karla Fant teaches a majority of the lower division courses (CS162, CS163, CS202) at PSU\\
+Responsibilities include:
+\begin{itemize}
+\item facilitate homework recitation and labs
+\item proctor programming proficiency demos and written exams
+\item create course materials
+\item grading and administrative tasks
+\end{itemize}
+\section{Education and Skills}
+\subsection{Portland State University --- BCS}
+Pursuing a bachelor's of Computer Science with a minor in
+Mathematics for graduation in 2021
+\subsection{Computer Languages}
+Rust,
+C/C++,
+Java,
+Latex,
+Python,
+R,
+JavaScript
+\section{Personal Interests and Projects}
+\subsection{Monte Carlo Simulation of Set\tiny\mdseries\textregistered}
+I am interested in the probabilities of this game\\
+An analysis I did can be found here:
+\href{https://www.github.com/aujxn/set_game_simulator}{Set Simulator}
+\subsection{Linear Algebra}
+I am co-developing an open source linear algebra library with the help
+of Waylon Cude\\
+It is very much in progress:
+\href{https://www.gitlab.com/AustenN/matrixlab}{matrixlab}
+\section{References}
+\begin{itemize}
+\item Karla Fant --- Senior Instructor, PSU MCECS --- (503) 725-5394
+\item Waylon Cude --- Software Engineer, Galois, Inc. --- (503) 830-1325
+\end{itemize}
+\end{document}
